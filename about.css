@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'SF Pro Display', Arial, sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: #333;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 40px;
+    background: #333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.intro:hover {
+    transform: scale(1.05);
+}
+
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.details {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #f39c12;
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* About Section */
+.about {
+    margin-top: 60px;
+    padding: 40px;
+    background: #444;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.about h2 {
+    color: #f39c12;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* Hobbies Section */
+.hobbies {
+    margin-top: 60px;
+    padding: 40px;
+    background: #444;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    animation: slideIn 1.2s ease-out;
+}
+
+.hobbies h2 {
+    color: #f39c12;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies li {
+    background: #333;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobbies li:hover {
+    transform: translateX(10px);
+}
+
+/* Social Section */
+.social {
+    margin-top: 60px;
+    padding: 40px;
+    background: #444;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    animation: slideIn 1.4s ease-out;
+}
+
+.social h2 {
+    color: #f39c12;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #333;
+    color: #fff;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
